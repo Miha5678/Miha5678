@@ -1,0 +1,68 @@
+<h1>Гонщик нелегальный!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.car {
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: calc(95% - 38px);
+    left: -200px;
+    background-color: #ff0000;
+    animation: drive 5s linear forwards;
+}
+
+@keyframes drive {
+    0% {
+        left: 50px;
+    }
+    90% {
+        left: calc(100% - 250px);
+    }
+    100% {
+        left: calc(100% - 200px);
+    }
+}
+
+.wheel {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+}
+
+.wheel.left {
+    left: 10px;
+}
+
+.wheel.right {
+    right: 10px;
+}
+
+body {
+    background-color: skyblue;
+
+}
+.road {
+    position:fixed;
+    top: 100%;
+    left: -1000;
+    transform: translateY(-50%);
+    width: 1000%;
+    height: 30px;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+    <div class="car">
+    <div class="road"></div>
+    <div class="body"></div>
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+</body>
+</html>
