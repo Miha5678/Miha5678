@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightgrey
+        }
+        img {
+            width: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .down  {
+            background-color: #ccc;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            text-align: center;
+            margin-top: 15px;
+        }
+
+         .item:hover {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        } 
+
+        .up {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .item2 {
+            text-align: right;
+        }
+
+        .content {
+            background-color: #ccc;
+            border: solid 1px #000;
+            display: grid;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        .p1 {
+            padding: 30px;
+            padding-right: 20px;
+        }
+
+        .p2 {
+            padding: 30px;
+            padding-right: 20px;
+        }
+
+        .down2 {
+            background-color: #ccc;
+            border: solid 1px #000;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            font-size: 30px;
+            
+        }
+
+        .down2 span {
+            width: 10px;
+            height: 5px;
+            border: 1px solid gray;
+            border-radius: 50px;
+           
+        }
+
+        .item5:hover {
+            background-color: blue;
+            color: #ccc;
+        }
+
+        .content2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="up">
+            <div class="Cute">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LhIge6bJd78mJA9BQsD8yyt39izxf6G-hA&usqp=CAU" alt="AnimalsCute">AnimalsCute
+            </div>
+            <div class="item2">
+            <input type="text" id="name" placeholder="Search">
+            <button>GO</button>
+            </div>
+        </div>
+        <div class="down">
+            <div class="item">HOME</div>
+            <div class="item">ABOUT US</div>
+            <div class="item">SERVICES</div>
+            <div class="item">PARINERS</div>
+            <div class="item">CUSTOMERS</div>
+            <div class="item">PROJECTS</div>
+            <div class="item">CAREERS</div>
+            <div class="item">CONTACT</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="up1">
+            <p class="p1">FUSCE VITAE NIBH QUIS DIAM FERMENTUM</p>
+            <p class="p2">Etiam adipiscing ultricies commodo</p>
+        </div>
+        <div class="down2">
+            <div class="item5"><span>1</span> LOREM IPSUM DOLOP</div>
+            <div class="item5"><span>2</span> ULTRICIES PELLENTESQUE</div>
+            <div class="item5"><span>3</span> ALIQUAM IPSUM</div>
+            <div class="item5"><span>4</span> NULLAM SED MAURIS UT</div>
+        </div>
+        <div class="up2">
+        <div class="content2">
+            <div class="p3">ABOUT AnimalsCute</div>
+            <p>This is a site where you can see beautiful, furry animals. Here you will find many friends on our website</p>
+            <div class="p4">A WORD FROM OUR CEO</div>
+            <p>I will give you hope and many friends</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
