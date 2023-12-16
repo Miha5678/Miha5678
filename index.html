@@ -1,68 +1,110 @@
-<h1>Гонщик нелегальный!</h1>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.car {
-    width: 200px;
-    height: 70px;
-    position: absolute;
-    top: calc(95% - 38px);
-    left: -200px;
-    background-color: #ff0000;
-    animation: drive 5s linear forwards;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-@keyframes drive {
-    0% {
-        left: 50px;
-    }
-    90% {
-        left: calc(100% - 250px);
-    }
-    100% {
-        left: calc(100% - 200px);
-    }
-}
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
 
-.wheel {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #000000;
-    position: absolute;
-    bottom: 0;
-}
+        .section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-.wheel.left {
-    left: 10px;
-}
+        #section1 {
+            background-color: #333;
+        }
 
-.wheel.right {
-    right: 10px;
-}
+        #section2 {
+            background-color: #666;
+        }
 
-body {
-    background-color: skyblue;
+        #section3 {
+            background-color: #999;
+        }
 
-}
-.road {
-    position:fixed;
-    top: 100%;
-    left: -1000;
-    transform: translateY(-50%);
-    width: 1000%;
-    height: 30px;
-    background-color: black;
-}
-</style>
+        #section4 {
+            background-color: #333;
+        }
+
+        #section5 {
+            background-color: #333;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div class="car">
-    <div class="road"></div>
-    <div class="body"></div>
-        <div class="wheel left"></div>
-        <div class="wheel right"></div>
+    <div id="section1" class="section">
+        <h1>Добро пожаловать на сайт "Путешествие"</h1>
+        <p>Наслаждайтесь отдыхом и незабываемыми приключениями!</p>
+    </div>
+    <div id="section2" class="section">
+        <h1>Популярные направления</h1>
+        <ul>
+            <li>Бангкок</li>
+            <li>Париж</li>
+            <li>Дубай</li>
+            <li>Сингапур</li>
+        </ul>
+    </div>
+    <div id="section3" class="section">  
+        <h1>Наши услуги</h1>
+        <div class="services">
+            <div class="service">
+                <img src="https://ezdili-znaem.com/wp-content/uploads/2018/02/singapore-a1.jpg" style="width: 350px;" alt="Услуга-1">
+                <h3>Отличные туры</h3>
+                <p>Мы предлагаем широкий выбор на вкус!</p>
+            </div>
+            <div class="service">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoOpWeteDRPn1aq1N7F-EbhYBngPOCOf0LfA&usqp=CAU" alt="Услуга-2">
+                <h3>Удобное бронирование</h3>
+                <p>Бронируйте туры удобным способом - онлайн или по телефону.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.apkipp.ru/static/img/gid.jpg" style="width: 250px;" alt="Услуга-3">
+                <h3>Профессиональные гиды</h3>
+                <p>Наши гиды помогут вам раскрывать все секреты интересующих вас мест.</p>              
+            </div>
+        </div>
+    </div>
+    <div id="section4" class="section">
+        <h1>Отзывы клиентов</h1>
+        <div class="reviews">
+            <div class="review">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwp5qcpcucINWUEP81ymkJfLq8QTzKInPcNQ&usqp=CAU" style="width: 150px;" alt="Аватар-1"> 
+                <p>Спасибо за потрясающий отдых!</p>
+                <p>Вася</p>
+            </div>
+            <div class="review">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" style="width: 150px;" alt="Аватар-2"> 
+                <p>Лучшее агенство в мире!</p>
+                <p>Маша</p>
+            </div>
+        </div>
+    </div>
+    <div id="section5" class="section">
+        <h1>Свяжитесь с нами</h1>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
 </body>
 </html>
