@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 50px;
+}
+
+#banner {
+  background-color: gainsboro;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: blue;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#about {
+  background-color: gray;
+  text-align: center;
+}
+
+#shop {
+  background-color: rgb(45, 43, 43);
+  text-align: center;
+}
+
+.shop1{
+  display: inline-block;
+  width: 700px;
+  padding: 20px;
+  margin: 20px;
+  background-color: gray;
+}
+
+.shop1 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#features {
+  background-color: gray;
+  text-align: center;
+}
+
+#features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact {
+  background-color: rgb(45, 43, 43);
+  text-align: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.banner1{
+    width: 1150px;
+    margin: 120px;
+    
+   
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;   
+}
+.about1{
+    display: inline-block;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    background-color: gray;
+}
+
+.about img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+a:hover {
+  transform: scale(1.2);
+}
+
+header {
+    background-color: ghostwhite;
+    color: black;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
